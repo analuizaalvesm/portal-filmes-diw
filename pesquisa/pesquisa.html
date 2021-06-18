@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="pesquisa.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisar</title>
+</head>
+
+<body>
+    <div>
+        <header class="header container-fluid">
+            <div class="header__logo" style="white-space: nowrap;">
+               <a href="..\index.html"><img class="" src="/imagens/cinetalkpink.svg" alt="Logo" style="height: 2rem;"></a>
+            </div>
+            <div class="header__menu">
+                <nav class="navbar navbar-expand-xxl navbar-dark">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="..\index.html">lançamentos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pesquisa\pesquisa.html">em destaque</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">avaliações</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">entrevistas & making of</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" style="padding-right: 20px;">novidades</a>
+                                </li>
+                            </ul>
+                            <div class="navbar__search">
+                                <form id=form>
+                                    <i class="bi bi-search" style="color: white;"></i>
+                                    <input type="text" placeholder="pesquisar filmes" id="search" class="search">
+                                    <i class="bi bi-x-circle" style="color: white;"></i>
+                                </form>
+                            </div>
+                        </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <div class="title">
+        <h1>Em Destaque</h1>
+    </div>
+
+    <main id="main">
+        <div class="movie">
+            <img src="https://uploads.metropoles.com/wp-content/uploads/2016/10/18115636/sala-de-cinema.jpg" alt="">
+            <span class="green">9.8</span>
+            
+            <div class="movie-info">
+                <h4>Título</h4> 
+            </div>
+            
+            <div class="overview">
+                <h6>Sinopse</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, blanditiis magnam. Vero excepturi
+                officia, incidunt asperiores, natus quisquam, autem dolores voluptatem sit explicabo adipisci
+                necessitatibus eius quia nobis ducimus harum?</p>
+            </div>
+        </div>
+
+        <div class="movie">
+            <img src="https://uploads.metropoles.com/wp-content/uploads/2016/10/18115636/sala-de-cinema.jpg" alt="">
+            <span class="green">9.8</span>
+
+            <div class="movie-info">
+                <h4>Título</h4>
+            </div>
+            
+
+            <div class="overview">
+                <h6>Sinopse</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, blanditiis magnam. Vero excepturi
+                    officia, incidunt asperiores, natus quisquam, autem dolores voluptatem sit explicabo adipisci
+                    necessitatibus eius quia nobis ducimus harum?</p>
+            </div>
+        </div>
+
+        <div class="movie">
+            <img src="https://uploads.metropoles.com/wp-content/uploads/2016/10/18115636/sala-de-cinema.jpg" alt="">
+            <span class="green">9.8</span>
+
+            <div class="movie-info">
+                <h4>Título</h4>    
+            </div>
+            
+            <div class="overview">
+                <h6>Sinopse</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, blanditiis magnam. Vero excepturi
+                    officia, incidunt asperiores, natus quisquam, autem dolores voluptatem sit explicabo adipisci
+                    necessitatibus eius quia nobis ducimus harum?</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal -->
+
+    <!-- <div id="modal-movie" class="modal-container">
+        <div class="modal">
+            <div class="row">
+                <div class="col md-6">
+                    <div class="videoWrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/yJW4szoZX1U"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="col md-3">
+                    <h3 class="subtitulo">Título</h3>
+                    <div class="modal-overview">
+                        <h4>Sinopse</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, blanditiis magnam. Vero excepturi
+                            officia, incidunt asperiores, natus quisquam, autem dolores voluptatem sit explicabo adipisci
+                            necessitatibus eius quia nobis ducimus harum?</p>
+                        <button class="button">Ver no site</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <script src="pesquisa.js"></script>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <p>Copyright 2021 - Disciplina de Desenvolvimento de Interfaces Web - <b>ICEI PUC Minas</b></p>
+    </footer>
+
+</body>
+
+</html>

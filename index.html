@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Filmes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Menu -->
+
+    <div>
+        <header class="header container-fluid">
+            <div class="header__logo" style="white-space: nowrap;">
+                <a href="..\index.html"><img class="" src="/imagens/cinetalkpink.svg" alt="Logo" style="height: 2rem;"></a>
+             </div>
+            <div class="header__menu">
+                <nav class="navbar navbar-expand-xxl navbar-dark">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">lançamentos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pesquisa\pesquisa.html">em destaque</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">avaliações</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">entrevistas & making of</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" style="padding-right: 20px;">novidades</a>
+                                </li>
+                            </ul>
+                            <div class="navbar__search">
+                                <form id=form>
+                                    <i class="bi bi-search" style="color: white;"></i>
+                                    <input type="text" placeholder="pesquisar filmes" id="search" class="search">
+                                    <i class="bi bi-x-circle" style="color: white;"></i>
+                                </form>
+                            </div>
+                        </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <!-- Lançamentos -->
+
+    <div class="container-fluid" id="carrossel">
+        <h1 class="title"><b>Lançamentos</b></h1>
+        <div class="row">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="content-film row">
+                            <div class="col-sm-12 col-md-12 col-lg-6" style="display: grid; align-content: center;">
+                                <div class="videoWrapper">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/yJW4szoZX1U"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="fonte col-sm-12 col-md-12 col-lg-6"
+                                style="display: grid; align-content: center;">
+                                <h2><b>Meu Pai</b> / <i>My Father</i></h2>
+                                <p style="text-align: justify;"><b>Sinopse: </b>Em Meu Pai, um homem idoso recusa toda a
+                                    ajuda de sua filha à medida
+                                    que envelhece. Ela está se mudando para Paris e precisa garantir os cuidados dele
+                                    enquanto estiver fora, buscando encontrar alguém para cuidar do pai. Ao tentar
+                                    entender suas mudanças, ele começa a duvidar de seus entes queridos, de sua própria
+                                    mente e até mesmo da estrutura da realidade.</p>
+                                <p><b>Diretor: </b>Florian Zeller</p>
+                                <p><b>Roteiro: </b>Christopher Hampton</p>
+                                <p><b>Estreia: </b>8 de abril de 2021</p>
+                                <p><b>Elenco: </b>Anthony Hopkins, Olivia Colman, Rufus Sewell</p>
+                                <p><b>Avaliação: </b>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="content-film row">
+                            <div class="col-sm-12 col-md-12 col-lg-6" style="display: grid; align-content: center;">
+                                <div class="videoWrapper">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QCGnF_E0pqM"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="fonte col-sm-12 col-md-12 col-lg-6"
+                                style="display: grid; align-content: center;">
+                                <h2><b>Minari: Em Busca da Felicidade</b> / <i>Minari</i></h2>
+                                <p style="text-align: justify;"><b>Sinopse: </b>Minari se passa nos anos 80. David (Alan
+                                    S. Kim), um menino
+                                    coreano-americano de sete anos de idade, que se depara com um novo ambiente e um
+                                    modo de vida diferente quando seu pai, Jacob (Steven Yeun), muda sua família da
+                                    costa oeste para a zona rural do Arkansas. Entediado com a nova rotina, David só
+                                    começa a se adaptar com a chegada de sua vó. Enquanto isso, Jacob, decidido a criar
+                                    uma fazenda em solo inexplorado, arrisca suas finanças, seu casamento e a
+                                    estabilidade da família.</p>
+                                <p><b>Diretor e Roteirista: </b>Lee Isaac Chung</p>
+                                <p><b>Estreia: </b>22 de abril de 2021</p>
+                                <p><b>Elenco: </b>Steven Yeun, Ye-Ri Han, Alan S. Kim</p>
+                                <p><b>Avaliação: </b>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="content-film row">
+                            <div class="col-sm-12 col-md-12 col-lg-6" style="display: grid; align-content: center;">
+                                <div class="videoWrapper">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9tOME28jr2U"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="fonte col-sm-12 col-md-12 col-lg-6"
+                                style="display: grid; align-content: center;">
+                                <h2><b>Os Pequenos Vestígios</b> / <i>The Little Things</i></h2>
+                                <p style="text-align: justify;"><b>Sinopse: </b>Em Pequenos Vestígios, Deke (Denzel
+                                    Washington) é um policial
+                                    cansado, com um talento para enxergar os pequenos detalhes que podem solucionar
+                                    casos e com uma tendência por quebrar regras. Quando ele se une ao esperto detetive
+                                    Baxter (Rami Malek), para encontrar um serial killer (Jared Leto), seu passado
+                                    obscuro e mau comportamento começam a se tornar um problema.</p>
+                                <p><b>Diretor e Roteirista: </b>John Lee Hancock</p>
+                                <p><b>Estreia: </b>22 de abril de 2021</p>
+                                <p><b>Elenco: </b>Denzel Washington, Rami Malek, Jared Leto</p>
+                                <p><b>Avaliação: </b>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Em Destaque -->
+
+    <div class="container">
+        <div class="row">
+            <div class="featuredMovies">
+                <h1><b>Em Destaque</b></h1>
+                <div class="dropdown">
+                    <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <p style="display: inline;"><b>Categoria: TODOS</b></p>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Aventura</a></li>
+                        <li><a class="dropdown-item" href="#">Romance</a></li>
+                        <li><a class="dropdown-item" href="#">Comédia</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main id="main">
+        <div class="movie">
+            <img src="https://uploads.metropoles.com/wp-content/uploads/2016/10/18115636/sala-de-cinema.jpg" alt="">
+            <span class="green">9.8</span>
+            
+            <div class="movie-info">
+                <h4>Título</h4> 
+            </div>
+            
+            <div class="overview">
+                <h6>Sinopse</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, blanditiis magnam. Vero excepturi
+                officia, incidunt asperiores, natus quisquam, autem dolores voluptatem sit explicabo adipisci
+                necessitatibus eius quia nobis ducimus harum?</p>
+            </div>
+        </div>
+
+        <div class="movie">
+            <img src="https://uploads.metropoles.com/wp-content/uploads/2016/10/18115636/sala-de-cinema.jpg" alt="">
+            <span class="green">9.8</span>
+
+            <div class="movie-info">
+                <h4>Título</h4>
+            </div>
+            
+
+            <div class="overview">
+                <h6>Sinopse</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, blanditiis magnam. Vero excepturi
+                    officia, incidunt asperiores, natus quisquam, autem dolores voluptatem sit explicabo adipisci
+                    necessitatibus eius quia nobis ducimus harum?</p>
+            </div>
+        </div>
+
+        <div class="movie">
+            <img src="https://uploads.metropoles.com/wp-content/uploads/2016/10/18115636/sala-de-cinema.jpg" alt="">
+            <span class="green">9.8</span>
+
+            <div class="movie-info">
+                <h4>Título</h4>    
+            </div>
+            
+            <div class="overview">
+                <h6>Sinopse</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, blanditiis magnam. Vero excepturi
+                    officia, incidunt asperiores, natus quisquam, autem dolores voluptatem sit explicabo adipisci
+                    necessitatibus eius quia nobis ducimus harum?</p>
+            </div>
+        </div>
+    </main>
+
+    <div class="container">
+        <div class="carregar">
+            <a href="pesquisa\pesquisa.html" class="button btn btn-dark">+ Ver mais filmes</a>
+        </div>
+    </div>
+
+    <!-- Avaliações -->
+
+    <div class="container">
+        <h1 class="subtitle utavaliacoes"><b>Últimas Avaliações</b></h1>
+        <div class="avaliacoes">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="perfil">
+                                    <img src="imagens/person.png" alt="avaliador">
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <div class="texto">
+                                    <h3><b>Vanessa Souza</b></h3>
+                                    <p><b>Avaliação: </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                        eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis
+                                        nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <p class="data"><b>24/04/2021</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="perfil">
+                                    <img src="imagens/person.png" alt="avaliador">
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <div class="texto">
+                                    <h3><b>Lucas Pires</b></h3>
+                                    <p><b>Avaliação: </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                        eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis
+                                        nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <p class="data"><b>22/04/2021</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="perfil">
+                                    <img src="imagens/person.png" alt="avaliador">
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <div class="texto">
+                                    <h3><b>Yghor Gomes</b></h3>
+                                    <p><b>Avaliação: </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                        eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis
+                                        nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                    <p class="data"><b>20/04/2021</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carregar-1">
+            <button type="button" class="btn btn-dark">+ Carregar mais Avaliações</button>
+        </div>
+    </div>
+    </div>
+
+    <!-- Entrevistas -->
+
+    <div class="interviews">
+        <div class="container">
+            <h1 class="subtitulo-1"><b>Entrevistas & Making Of</b></h1>
+            <section class="container-fluid" style="padding: 0;">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-4" style="padding: 0;">
+                        <div class="item">
+                            <div class="videoWrapper">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/LT_YrR7IdG8"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="descricao">
+                                <h4><b>Filme: </b>Bela Vingança</h4>
+                                <h5><i>Promising Young Woman</i></h5>
+                                <div class="bloco-texto">
+                                    <p class="texto-descricao"><b>Direção e Roteiro:</b> Emerald Fennel</p>
+                                    <p class="texto-descricao"><b>Estreia: </b>2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4" style="padding: 0;">
+                        <div class="item">
+                            <div class="videoWrapper">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/tlYM89aQYAc"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="descricao">
+                                <h4><b>Filme: </b>Nomadland</h4>
+                                <h5><i>Nomadland</i></h5>
+                                <div class="bloco-texto">
+                                    <p class="texto-descricao"><b>Direção e Roteiro: </b> Chloé Zhao</p>
+                                    <p class="texto-descricao"><b>Estreia: </b>2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4" style="padding: 0;">
+                        <div class="item">
+                            <div class="videoWrapper">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/wy34U3AG1rw"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="descricao">
+                                <h4><b>Filme: </b>Judas e o Messias Negro</h4>
+                                <h5><i>Judas and the Black Messiah</i></h5>
+                                <div class="bloco-texto">
+                                    <p class="texto-descricao"><b>Direção: </b> Shaka King</p>
+                                    <p class="texto-descricao"><b>Roteiro: </b>Shaka King, Will Berson</p>
+                                    <p class="texto-descricao"><b>Estreia: </b>2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="carregar-2">
+                <button type="button" class="btn btn-light"><b>+ Carregar mais Entrevistas</b></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Novidades -->
+
+    <div class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-sm-12">
+                    <div class="subtitulos">
+                        <h1><b>Novidades</b></h1>
+                    </div>
+                    <div class="item-a">
+                        <div class="card mb-3" style="border: none;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img class="img-fluid" style="width: 100%; height: 100%; border-radius: 5px;"
+                                        src="imagens/trolls.jpg" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Caçadores de Trolls: A Ascenção dos Titãs ganha
+                                                trailer e data de estreia; veja</b></h5>
+                                        <p class="card-text">Longa produzido por Guillermo Del Toro estreia em 21 de
+                                            julho na Netflix</p>
+                                        <span class="badge bg-dark">animações</span> <span
+                                            class="badge bg-dark">filmes</span> <span class="badge bg-dark">netflix
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-a">
+                        <div class="card mb-3" style="border: none;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img class="img-fluid" style="width: 100%; height: 100%; border-radius: 5px;"
+                                        src="imagens/captain_america.jpg"" alt=" ...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Anthony Mackie foi pego de surpresa com anúncio de
+                                                Capitão América 4</b></h5>
+                                        <p class="card-text">Astro de Falcão e o Soldado Invernal é provável
+                                            protagonista do longa</p>
+                                        <span class="badge bg-dark">marvel</span> <span
+                                            class="badge bg-dark">filmes</span> <span class="badge bg-dark">notícias
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-a">
+                        <div class="card mb-3" style="border: none;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img class="img-fluid" style="width: 100%; height: 100%; border-radius: 5px;"
+                                        src="imagens/espiral.jpg" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Espiral: O Legado de Jogos Mortais ganha data de
+                                                estreia no Brasil</b></h5>
+                                        <p class="card-text">Novo filme da franquia chega em junho; veja uma cena
+                                            inédita do longa
+                                        </p>
+                                        <span class="badge bg-dark">estreia</span> <span
+                                            class="badge bg-dark">filmes</span> <span
+                                            class="badge bg-dark">terror</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-sm-12">
+                    <div class="subtitulos">
+                        <h1><b>Sobre</b></h1>
+                    </div>
+                    <div class="item-b">
+                        <p style="text-align: justify;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi
+                            ut
+                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                            esse
+                            cillum dolore eu fugiat nulla.
+                        </p>
+                    </div>
+                    <div class="item-c">
+                        <h2><b>Editorial</b></h2>
+                        <h5 style="padding-top: 10px; margin-bottom: 10px;"><i class="bi bi-person-fill"></i>
+                            <b>Redação: </b> Filipe Gomes</h5>
+                        <h5 style="margin-bottom: 10px;"><i class="bi bi-person-fill"></i> <b>Pesquisa: </b> Enzo Dias
+                            <h5>
+                                <h5 style="margin-bottom: 10px;"><i class="bi bi-person-fill"></i> <b>Gerente Geral:
+                                    </b> Ana Luiza Alves</h5>
+                    </div>
+                    <div class="item-d">
+                        <h2 style="padding-top: 20px;"><b>Redes Sociais</b></h2>
+                        <div class="icones">
+                            <a><i class="bi bi-facebook" style="font-size: 3rem"></i></a>
+                            <a><i class="bi bi-twitter" style="font-size: 3rem"></i></a>
+                            <a><i class="bi bi-instagram" style="font-size: 3rem"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Copyright 2021 - Disciplina de Desenvolvimento de Interfaces Web - <b>ICEI PUC Minas</b></p>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper> -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

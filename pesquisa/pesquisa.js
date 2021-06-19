@@ -27,7 +27,7 @@ function showMovies(data) {
         const movieElement = document.createElement('div');
         movieElement.classList.add('movie');
         movieElement.innerHTML = `
-                <div onclick="window.open('https://www.themoviedb.org/movie/${id}', '_blank')">
+                <div>
                     <img src="${IMG_URL+poster_path}" alt="${title}">
 
                     <div class="flex-container">
@@ -40,7 +40,7 @@ function showMovies(data) {
                     <div class="overview">
                         <h5>Sinopse</h5>
                         <p>${overview.length>300 ? overview.slice(0,300)+ "..." : overview}</p>
-                        <button class="button btn btn-dark">Ler mais</button>
+                        <button class="button btn btn-dark" onclick="window.open('https://www.themoviedb.org/movie/${id}', '_blank')">Ler mais</button>
                     </div>
                 </div>
 

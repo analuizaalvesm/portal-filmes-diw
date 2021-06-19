@@ -44,9 +44,10 @@
     display: flex;
 }
 
-.avaliacoes img{
+.perfil img{
     width: 60px;
     height: 60px;
+    transform: 250ms all;
 }
 
 .texto{
@@ -305,6 +306,12 @@ main {
 .movie img{
     width: 300px;
     height: 450px;
+    transition: 500ms all;
+}
+
+img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .movie-info{
